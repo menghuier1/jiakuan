@@ -15,18 +15,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 02 - xiaohe
-  type: vless
-  server: 104.16.8.66
-  port: 8880
-  uuid: 2145ee90-d933-4975-b4fe-8fa5365937f0
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: long-breeze-5552.250-271.workers.dev
 - name: 🇸🇨 SC 03 - xiaohe
   type: vmess
   server: 156.226.183.181
@@ -38,18 +35,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: 104.17.58.113
-  port: 8880
-  uuid: fbd6ffcc-f07b-4790-898e-2a6827f6d10f
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: old-disk-b667.399-1b9.workers.dev
 - name: 🇸🇨 SC 05 - xiaohe
   type: vmess
   server: 156.226.183.181
