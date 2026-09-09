@@ -19,17 +19,17 @@ proxies:
       Host: 85.17.145.65
 - name: 🇳🇱 荷兰 (Netherlands) 02 - xiaohe
   type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 03 - xiaohe
-  type: ss
   server: 193.29.139.168
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 03 - xiaohe
+  type: ss
+  server: 193.29.139.238
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 04 - xiaohe
   type: ss
@@ -40,10 +40,10 @@ proxies:
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 05 - xiaohe
   type: ss
-  server: 193.29.139.238
-  port: 8080
+  server: 108.181.58.239
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: CJmTCCx7Ltud
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 06 - xiaohe
   type: ss
