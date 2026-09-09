@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SOURCE_URLS = [
-    "https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt",
+    "https://etoneya.su/1",
 ]
 
 OUTPUT_DIR = "output"
