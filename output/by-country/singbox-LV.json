@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇱🇻 LV 01 - xiaohe",
+        "🇱🇻 LV 02 - xiaohe",
+        "🇱🇻 LV 03 - xiaohe",
+        "🇱🇻 LV 04 - xiaohe",
+        "🇱🇻 LV 05 - xiaohe",
+        "🇱🇻 LV 06 - xiaohe",
+        "🇱🇻 LV 07 - xiaohe",
+        "🇱🇻 LV 08 - xiaohe",
+        "🇱🇻 LV 09 - xiaohe",
+        "🇱🇻 LV 10 - xiaohe",
+        "🇱🇻 LV 11 - xiaohe",
+        "🇱🇻 LV 12 - xiaohe",
+        "🇱🇻 LV 13 - xiaohe",
+        "🇱🇻 LV 14 - xiaohe",
+        "🇱🇻 LV 15 - xiaohe",
+        "🇱🇻 LV 16 - xiaohe",
+        "🇱🇻 LV 17 - xiaohe",
+        "🇱🇻 LV 18 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇱🇻 LV 01 - xiaohe",
+        "🇱🇻 LV 02 - xiaohe",
+        "🇱🇻 LV 03 - xiaohe",
+        "🇱🇻 LV 04 - xiaohe",
+        "🇱🇻 LV 05 - xiaohe",
+        "🇱🇻 LV 06 - xiaohe",
+        "🇱🇻 LV 07 - xiaohe",
+        "🇱🇻 LV 08 - xiaohe",
+        "🇱🇻 LV 09 - xiaohe",
+        "🇱🇻 LV 10 - xiaohe",
+        "🇱🇻 LV 11 - xiaohe",
+        "🇱🇻 LV 12 - xiaohe",
+        "🇱🇻 LV 13 - xiaohe",
+        "🇱🇻 LV 14 - xiaohe",
+        "🇱🇻 LV 15 - xiaohe",
+        "🇱🇻 LV 16 - xiaohe",
+        "🇱🇻 LV 17 - xiaohe",
+        "🇱🇻 LV 18 - xiaohe"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
