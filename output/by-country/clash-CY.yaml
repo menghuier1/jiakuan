@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: random
 - name: 🇨🇾 CY 02 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 03 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -42,23 +42,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇾 CY 04 - xiaohe
   type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: torr.wlrus.cfd
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 05 - xiaohe
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: torr.wlrus.cfd
-- name: 🇨🇾 CY 06 - xiaohe
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -69,8 +63,26 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
+- name: 🇨🇾 CY 06 - xiaohe
+  type: vless
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torr.wlrus.cfd
 - name: 🇨🇾 CY 07 - xiaohe
+  type: vless
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torr.wlrus.cfd
+- name: 🇨🇾 CY 08 - xiaohe
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -82,15 +94,6 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 CY 08 - xiaohe
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: torr.wlrus.cfd
 - name: 🇨🇾 CY 09 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -102,7 +105,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇾 CY 10 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -114,29 +117,22 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 11 - xiaohe
   type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  server: 172.67.219.50
+  port: 443
+  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: chrome
+  servername: ez-541f9d.ezaccess1d3db24.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-541f9d.ezaccess1d3db24.workers.dev
 - name: 🇨🇾 CY 12 - xiaohe
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: torr.wlrus.cfd
-- name: 🇨🇾 CY 13 - xiaohe
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -148,6 +144,18 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
   client-fingerprint: qq
+- name: 🇨🇾 CY 13 - xiaohe
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 14 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -171,19 +179,16 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 CY 16 - xiaohe
   type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: chrome
+  servername: torr.wlrus.cfd
 - name: 🇨🇾 CY 17 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -195,7 +200,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇾 CY 18 - xiaohe
   type: vless
   server: 45.9.2.171
@@ -228,20 +233,26 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 21 - xiaohe
   type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  server: 45.9.2.171
+  port: 8443
+  uuid: 8fe31772-a4b7-4a70-9fa2-34124c7284ca
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: chrome
+  servername: torr.wlrus.cfd
 - name: 🇨🇾 CY 22 - xiaohe
+  type: vless
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torr.wlrus.cfd
+- name: 🇨🇾 CY 23 - xiaohe
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -253,15 +264,18 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
   client-fingerprint: qq
-- name: 🇨🇾 CY 23 - xiaohe
+- name: 🇨🇾 CY 24 - xiaohe
   type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 8fe31772-a4b7-4a70-9fa2-34124c7284ca
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: torr.wlrus.cfd
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -290,6 +304,7 @@ proxy-groups:
   - 🇨🇾 CY 21 - xiaohe
   - 🇨🇾 CY 22 - xiaohe
   - 🇨🇾 CY 23 - xiaohe
+  - 🇨🇾 CY 24 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -318,5 +333,6 @@ proxy-groups:
   - 🇨🇾 CY 21 - xiaohe
   - 🇨🇾 CY 22 - xiaohe
   - 🇨🇾 CY 23 - xiaohe
+  - 🇨🇾 CY 24 - xiaohe
 rules:
 - MATCH,PROXIES

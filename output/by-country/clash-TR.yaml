@@ -6,17 +6,65 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
+  server: 104.21.238.93
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
+    headers:
+      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  type: vmess
+  server: 188.132.232.85
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -28,37 +76,67 @@ proxies:
     public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
+  server: 188.132.232.85
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
   type: vless
   server: 195.162.69.203
   port: 8443
@@ -67,136 +145,78 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
   type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
+  server: 188.132.232.85
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
   type: vless
-  server: 185.71.219.80
-  port: 15260
-  uuid: 2My-chanel-Telegram-ATOVPN
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
+  type: vless
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 17 - xiaohe
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇹🇷 土耳其 (Turkey) 18 - xiaohe
   type: vless
   server: 45.74.158.180
   port: 443
-  uuid: 42994234-1689-48bc-8d01-cfb16e7b017a
+  uuid: 74a755ed-3276-4894-b010-8eea73feb267
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: MgyA2FY0p2q_VOwoL9T1Z3rzpKEcGjfN61QliGcyHA8
   servername: refersion.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
-  type: vless
-  server: tr.rajastore.ir
-  port: 443
-  uuid: '14721'
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4Gxg-e1xgmj0YIfnHTAgcLWprUhrwBOQDbaSVbzDelY
-  servername: timeline.www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 17 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 18 - xiaohe
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 19 - xiaohe
   type: vless
   server: 195-162-69-203.sslip.io
@@ -208,14 +228,29 @@ proxies:
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 20 - xiaohe
   type: vless
-  server: 195-162-69-203.sslip.io
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  server: 151.241.226.201
+  port: 2053
+  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
+  reality-opts:
+    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 21 - xiaohe
+  type: vless
+  server: 45.74.158.180
+  port: 443
+  uuid: 42994234-1689-48bc-8d01-cfb16e7b017a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MgyA2FY0p2q_VOwoL9T1Z3rzpKEcGjfN61QliGcyHA8
+  servername: refersion.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 22 - xiaohe
   type: vless
   server: 195.162.69.203
   port: 8443
@@ -224,6 +259,95 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 23 - xiaohe
+  type: vless
+  server: 45.74.158.180
+  port: 443
+  uuid: 74a755ed-3276-4894-b010-8eea73feb267
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MgyA2FY0p2q_VOwoL9T1Z3rzpKEcGjfN61QliGcyHA8
+  servername: refersion.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 24 - xiaohe
+  type: vless
+  server: tr.rajastore.ir
+  port: 443
+  uuid: '14721'
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4Gxg-e1xgmj0YIfnHTAgcLWprUhrwBOQDbaSVbzDelY
+  servername: timeline.www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 25 - xiaohe
+  type: vmess
+  server: 188.132.232.85
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 26 - xiaohe
+  type: vless
+  server: 104.20.6.153
+  port: 8880
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /j100sy9wn073cxbvir
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 27 - xiaohe
+  type: ss
+  server: 188.132.232.85
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 28 - xiaohe
+  type: vless
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 29 - xiaohe
+  type: vless
+  server: 188.132.232.85
+  port: 8060
+  uuid: 811cd6db-2287-47e9-8a06-9e38b5be9c55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 188.132.232.85
+- name: 🇹🇷 土耳其 (Turkey) 30 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: index.harmonica01.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -250,6 +374,15 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 20 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 21 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 22 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 23 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 24 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 25 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 26 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 27 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 28 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 29 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 30 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -276,5 +409,14 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 20 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 21 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 22 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 23 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 24 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 25 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 26 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 27 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 28 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 29 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 30 - xiaohe
 rules:
 - MATCH,PROXIES
