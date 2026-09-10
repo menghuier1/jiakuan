@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xiaohe
   type: vless
-  server: 45.134.9.133
+  server: ul-mexico1.09vpn.com
   port: 8443
   uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
   udp: true
@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 45.134.9.133
+      Host: ul-mexico1.09vpn.com
 - name: 🇲🇽 MX 02 - xiaohe
   type: vless
   server: ul-mexico1.09vpn.com
@@ -34,19 +34,6 @@ proxies:
       Host: ul-mexico1.09vpn.com
 - name: 🇲🇽 MX 03 - xiaohe
   type: vless
-  server: 155.46.213.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-- name: 🇲🇽 MX 04 - xiaohe
-  type: vless
   server: ul-mexico1.09vpn.com
   port: 8443
   uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
@@ -59,6 +46,20 @@ proxies:
     path: /vless/
     headers:
       Host: ul-mexico1.09vpn.com
+- name: 🇲🇽 MX 04 - xiaohe
+  type: vless
+  server: 45.134.9.133
+  port: 8443
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ul-mexico1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 45.134.9.133
 proxy-groups:
 - name: PROXIES
   type: select

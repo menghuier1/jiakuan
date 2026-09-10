@@ -18,18 +18,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇲 AM 02 - xiaohe
   type: vless
-  server: mybb.com
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
 - name: 🇦🇲 AM 03 - xiaohe
   type: vless
   server: 77.91.68.70
@@ -66,18 +64,6 @@ proxies:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇦🇲 AM 06 - xiaohe
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-  servername: yahoo.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,7 +74,6 @@ proxy-groups:
   - 🇦🇲 AM 03 - xiaohe
   - 🇦🇲 AM 04 - xiaohe
   - 🇦🇲 AM 05 - xiaohe
-  - 🇦🇲 AM 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,6 +84,5 @@ proxy-groups:
   - 🇦🇲 AM 03 - xiaohe
   - 🇦🇲 AM 04 - xiaohe
   - 🇦🇲 AM 05 - xiaohe
-  - 🇦🇲 AM 06 - xiaohe
 rules:
 - MATCH,PROXIES
