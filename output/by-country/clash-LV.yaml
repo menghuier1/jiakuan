@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaohe
   type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 89.36.161.222
+- name: 🇱🇻 LV 02 - xiaohe
+  type: vless
   server: laoye.in-gect.fun
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
@@ -17,7 +30,7 @@ proxies:
     path: /
     headers:
       Host: laoye.in-gect.fun
-- name: 🇱🇻 LV 02 - xiaohe
+- name: 🇱🇻 LV 03 - xiaohe
   type: vless
   server: 89.36.161.222
   port: 2096
@@ -30,19 +43,6 @@ proxies:
     path: /
     headers:
       Host: 89.36.161.222
-- name: 🇱🇻 LV 03 - xiaohe
-  type: vless
-  server: laoye.in-gect.fun
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 04 - xiaohe
   type: vless
   server: 89.36.161.222
@@ -58,7 +58,7 @@ proxies:
       Host: 89.36.161.222
 - name: 🇱🇻 LV 05 - xiaohe
   type: vless
-  server: laoye.in-gect.fun
+  server: 89.36.161.222
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -68,7 +68,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 LV 06 - xiaohe
   type: vless
   server: 89.36.161.222
@@ -84,7 +84,7 @@ proxies:
       Host: 89.36.161.222
 - name: 🇱🇻 LV 07 - xiaohe
   type: vless
-  server: laoye.in-gect.fun
+  server: 89.36.161.222
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -94,7 +94,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 LV 08 - xiaohe
   type: vless
   server: 89.36.161.222
@@ -110,7 +110,7 @@ proxies:
       Host: 89.36.161.222
 - name: 🇱🇻 LV 09 - xiaohe
   type: vless
-  server: 89.36.161.222
+  server: laoye.in-gect.fun
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -123,7 +123,7 @@ proxies:
       Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 10 - xiaohe
   type: vless
-  server: 89.36.161.222
+  server: laoye.in-gect.fun
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -133,7 +133,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 89.36.161.222
+      Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 11 - xiaohe
   type: vless
   server: 89.36.161.222
@@ -146,7 +146,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 89.36.161.222
+      Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 12 - xiaohe
   type: vless
   server: 89.36.161.222
@@ -162,7 +162,7 @@ proxies:
       Host: 89.36.161.222
 - name: 🇱🇻 LV 13 - xiaohe
   type: vless
-  server: 89.36.161.222
+  server: laoye.in-gect.fun
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -172,7 +172,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 89.36.161.222
+      Host: laoye.in-gect.fun
 proxy-groups:
 - name: PROXIES
   type: select
