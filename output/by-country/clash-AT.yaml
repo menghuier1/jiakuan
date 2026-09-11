@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇹 AT 02 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇦🇹 AT 03 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇦🇹 AT 04 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -51,7 +51,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇦🇹 AT 05 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -63,7 +63,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇦🇹 AT 06 - xiaohe
   type: vless
   server: 152.53.1.40
