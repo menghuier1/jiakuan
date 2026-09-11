@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: app-q0zc4t.user-4gfyh5.workers.dev
-  port: 443
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  server: 162.159.0.169
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: app-q0zc4t.user-4gfyh5.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 02 - xiaohe
   type: vmess
   server: 156.226.183.181
@@ -39,18 +38,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: 172.64.229.170
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 05 - xiaohe
   type: vmess
   server: 156.226.183.181
@@ -62,25 +58,31 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 06 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: round-truth-dcf1.34-719.workers.dev
+  port: 8880
+  uuid: 1399f473-ffb5-4942-b05c-7dd3fc0007fb
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: round-truth-dcf1.34-719.workers.dev
 - name: 🇸🇨 SC 07 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.64.53.55
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 08 - xiaohe
   type: vmess
   server: 156.226.183.181
@@ -101,32 +103,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 10 - xiaohe
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇸🇨 SC 11 - xiaohe
-  type: vless
-  server: 156.243.83.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime54.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,8 +117,6 @@ proxy-groups:
   - 🇸🇨 SC 07 - xiaohe
   - 🇸🇨 SC 08 - xiaohe
   - 🇸🇨 SC 09 - xiaohe
-  - 🇸🇨 SC 10 - xiaohe
-  - 🇸🇨 SC 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -157,7 +131,5 @@ proxy-groups:
   - 🇸🇨 SC 07 - xiaohe
   - 🇸🇨 SC 08 - xiaohe
   - 🇸🇨 SC 09 - xiaohe
-  - 🇸🇨 SC 10 - xiaohe
-  - 🇸🇨 SC 11 - xiaohe
 rules:
 - MATCH,PROXIES

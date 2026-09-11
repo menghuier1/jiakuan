@@ -6,44 +6,46 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: k2.cloud--vpn.site
+  server: 151.101.56.6
   port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  uuid: cc4a473a-2e15-4fc6-ec54-47c3aa5cec09
   udp: true
   tls: true
   skip-cert-verify: true
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 02 - xiaohe
-  type: vless
-  server: 151.101.56.6
+  type: vmess
+  server: 185.230.190.29
   port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: c12.com
+      Host: renderer-stream-2-62.mirra.now
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  server: 212.193.18.183
+  port: 8443
+  uuid: c037d90b-83ec-422f-b547-c77575392f6f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+  servername: maps.apple.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 185.79.138.71
@@ -70,32 +72,30 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
-  server: land.zavqeron.ir
-  port: 2053
-  uuid: f2900749-7cff-42b7-9566-dfb03840d374
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: zavqeron.ir
-  network: ws
-  ws-opts:
-    path: /fi-cdn
-    headers:
-      Host: land.zavqeron.ir
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 07 - xiaohe
   type: vless
-  server: land.zavqeron.ir
-  port: 2053
-  uuid: f2900749-7cff-42b7-9566-dfb03840d374
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: cc4a473a-2e15-4fc6-ec54-47c3aa5cec09
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: zavqeron.ir
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /fi-cdn
+    path: /
     headers:
-      Host: land.zavqeron.ir
+      Host: c12.com
 - name: 🇫🇮 FI 08 - xiaohe
   type: vless
   server: 185.79.138.71
@@ -109,6 +109,30 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 09 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 10 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 11 - xiaohe
   type: vmess
   server: 185.230.190.29
   port: 443
@@ -124,21 +148,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-2-62.mirra.now
-- name: 🇫🇮 FI 10 - xiaohe
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 11 - xiaohe
+- name: 🇫🇮 FI 12 - xiaohe
   type: vless
   server: 185.79.138.71
   port: 448
@@ -149,18 +159,6 @@ proxies:
   reality-opts:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 12 - xiaohe
-  type: vless
-  server: 51cd118698eac006.mbcloudy.ir
-  port: 8735
-  uuid: 14ffccc6-81e0-4108-ab35-b3df398534af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
-  servername: play-apps-features.googleusercontent.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 13 - xiaohe
   type: vless
@@ -176,16 +174,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 14 - xiaohe
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  server: 151.101.56.6
+  port: 443
+  uuid: cc4a473a-2e15-4fc6-ec54-47c3aa5cec09
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--KANAL--@VPNine1--@VPNine1--@VPNine1--@VPNine1--@VPNine1--@VPNine1--@VPNine1--@VPNine1--@VPNine1--@VPNine1--@VPNine1--@VPNine1
+    headers:
+      Host: c12.com
 - name: 🇫🇮 FI 15 - xiaohe
   type: vless
   server: 185.79.138.71
@@ -224,18 +224,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 18 - xiaohe
   type: vless
-  server: land.zavqeron.ir
-  port: 2053
-  uuid: f2900749-7cff-42b7-9566-dfb03840d374
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: zavqeron.ir
-  network: ws
-  ws-opts:
-    path: /fi-cdn
-    headers:
-      Host: land.zavqeron.ir
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 19 - xiaohe
   type: vless
   server: 185.79.138.71
@@ -250,44 +248,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 20 - xiaohe
   type: vless
-  server: d23e29c2f13ce71d.mbcloudynias.ir
-  port: 8735
-  uuid: 14ffccc6-81e0-4108-ab35-b3df398534af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 21 - xiaohe
-  type: vless
-  server: land.zavqeron.ir
-  port: 2053
-  uuid: f2900749-7cff-42b7-9566-dfb03840d374
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zavqeron.ir
-  network: ws
-  ws-opts:
-    path: /fi-cdn
-    headers:
-      Host: land.zavqeron.ir
-- name: 🇫🇮 FI 22 - xiaohe
-  type: vless
-  server: 212.193.18.183
-  port: 8443
-  uuid: c037d90b-83ec-422f-b547-c77575392f6f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
-  servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 23 - xiaohe
-  type: vless
   server: 185.79.138.71
   port: 448
   uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
@@ -298,34 +258,6 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 24 - xiaohe
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 25 - xiaohe
-  type: vmess
-  server: 185.230.190.29
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
@@ -351,11 +283,6 @@ proxy-groups:
   - 🇫🇮 FI 18 - xiaohe
   - 🇫🇮 FI 19 - xiaohe
   - 🇫🇮 FI 20 - xiaohe
-  - 🇫🇮 FI 21 - xiaohe
-  - 🇫🇮 FI 22 - xiaohe
-  - 🇫🇮 FI 23 - xiaohe
-  - 🇫🇮 FI 24 - xiaohe
-  - 🇫🇮 FI 25 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -381,10 +308,5 @@ proxy-groups:
   - 🇫🇮 FI 18 - xiaohe
   - 🇫🇮 FI 19 - xiaohe
   - 🇫🇮 FI 20 - xiaohe
-  - 🇫🇮 FI 21 - xiaohe
-  - 🇫🇮 FI 22 - xiaohe
-  - 🇫🇮 FI 23 - xiaohe
-  - 🇫🇮 FI 24 - xiaohe
-  - 🇫🇮 FI 25 - xiaohe
 rules:
 - MATCH,PROXIES

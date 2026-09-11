@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇦🇹 AT 02 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇦🇹 AT 03 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -63,7 +63,19 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
+- name: 🇦🇹 AT 06 - xiaohe
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +86,7 @@ proxy-groups:
   - 🇦🇹 AT 03 - xiaohe
   - 🇦🇹 AT 04 - xiaohe
   - 🇦🇹 AT 05 - xiaohe
+  - 🇦🇹 AT 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +97,6 @@ proxy-groups:
   - 🇦🇹 AT 03 - xiaohe
   - 🇦🇹 AT 04 - xiaohe
   - 🇦🇹 AT 05 - xiaohe
+  - 🇦🇹 AT 06 - xiaohe
 rules:
 - MATCH,PROXIES
