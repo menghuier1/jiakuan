@@ -6,373 +6,117 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: 185.193.29.123
+  server: app-q0zc4t.user-4gfyh5.workers.dev
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇸🇨 SC 02 - xiaohe
-  type: vless
-  server: lingering-lab-91a6.54-8c3.workers.dev
-  port: 8880
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
-- name: 🇸🇨 SC 03 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇸🇨 SC 02 - xiaohe
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ez-82c7e7.abobaba.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-82c7e7.abobaba.workers.dev
+- name: 🇸🇨 SC 03 - xiaohe
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇨 SC 04 - xiaohe
   type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 37fce9ce-9fec-4f30-89a0-fbb1f6f33b3c
+  server: 172.64.229.170
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /?ed=2560security=tls
     headers:
-      Host: white-night-afee.419-acc.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 05 - xiaohe
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 37fce9ce-9fec-4f30-89a0-fbb1f6f33b3c
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: white-night-afee.419-acc.workers.dev
 - name: 🇸🇨 SC 06 - xiaohe
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: cf39cbf2-8926-43b5-ba3e-45b975019094
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: snowy-feather-39d3.428.workers.dev
 - name: 🇸🇨 SC 07 - xiaohe
-  type: vless
-  server: round-truth-dcf1.34-719.workers.dev
-  port: 8880
-  uuid: 1399f473-ffb5-4942-b05c-7dd3fc0007fb
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: round-truth-dcf1.34-719.workers.dev
 - name: 🇸🇨 SC 08 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 9b7d9618-29a6-45e9-9eca-dcc7ad42f974
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: shrill-frost-6da5.155-dec.workers.dev
 - name: 🇸🇨 SC 09 - xiaohe
-  type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
 - name: 🇸🇨 SC 10 - xiaohe
   type: vless
-  server: anydesk.com
-  port: 8880
-  uuid: e431026f-d605-4a52-8b3b-0912a68dc9d1
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /sync
     headers:
-      Host: sparkling-shadow-481d.342-429.workers.dev
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇸🇨 SC 11 - xiaohe
   type: vless
-  server: www.zsu.gov.ua
-  port: 8880
-  uuid: f22856f8-66f0-4655-ba86-5385971e1302
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: throbbing-mountain-45e9.314-df3.workers.dev
-- name: 🇸🇨 SC 12 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 13 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 14 - xiaohe
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: cf39cbf2-8926-43b5-ba3e-45b975019094
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: snowy-feather-39d3.428.workers.dev
-- name: 🇸🇨 SC 15 - xiaohe
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: d6c595c9-bff4-4510-893a-dfa3c87fa0cd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lucky-cell-d20c.78-107.workers.dev
-- name: 🇸🇨 SC 16 - xiaohe
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-5faafb.esmaoi.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-5faafb.esmaoi.workers.dev
-- name: 🇸🇨 SC 17 - xiaohe
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: cf39cbf2-8926-43b5-ba3e-45b975019094
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: snowy-feather-39d3.428.workers.dev
-- name: 🇸🇨 SC 18 - xiaohe
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: da5ff974-c135-4b57-a0ff-53dd2502e71e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: long-smoke-b6cb.290-cd1.workers.dev
-- name: 🇸🇨 SC 19 - xiaohe
-  type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: cf39cbf2-8926-43b5-ba3e-45b975019094
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.us.cmliussss.net
-    headers:
-      Host: snowy-feather-39d3.428.workers.dev
-- name: 🇸🇨 SC 20 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 21 - xiaohe
-  type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🇸🇨 SC 22 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 23 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: def8ed1e-e07b-40e0-9bc0-7a2ba2cedd56
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lucky-haze-724d.330-8c5.workers.dev
-- name: 🇸🇨 SC 24 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 25 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 26 - xiaohe
-  type: vless
-  server: aged-silence-8d7d.tahaggs.workers.dev
-  port: 8080
-  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: aged-silence-8d7d.tahaggs.workers.dev
-- name: 🇸🇨 SC 27 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇸🇨 SC 28 - xiaohe
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: bf380279-cbd5-4e55-96d1-f5a652aaf6b3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.us.cmliussss.net
-    headers:
-      Host: mute-dust-f0c4.456-8ae.workers.dev
-- name: 🇸🇨 SC 29 - xiaohe
-  type: vless
-  server: curly-night-6928.ggdhchjk.workers.dev
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-- name: 🇸🇨 SC 30 - xiaohe
-  type: vless
-  server: 45.130.125.30
+  server: 156.243.83.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
@@ -382,7 +126,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime58.workers.dev
+      Host: vms.lifetime54.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -399,25 +143,6 @@ proxy-groups:
   - 🇸🇨 SC 09 - xiaohe
   - 🇸🇨 SC 10 - xiaohe
   - 🇸🇨 SC 11 - xiaohe
-  - 🇸🇨 SC 12 - xiaohe
-  - 🇸🇨 SC 13 - xiaohe
-  - 🇸🇨 SC 14 - xiaohe
-  - 🇸🇨 SC 15 - xiaohe
-  - 🇸🇨 SC 16 - xiaohe
-  - 🇸🇨 SC 17 - xiaohe
-  - 🇸🇨 SC 18 - xiaohe
-  - 🇸🇨 SC 19 - xiaohe
-  - 🇸🇨 SC 20 - xiaohe
-  - 🇸🇨 SC 21 - xiaohe
-  - 🇸🇨 SC 22 - xiaohe
-  - 🇸🇨 SC 23 - xiaohe
-  - 🇸🇨 SC 24 - xiaohe
-  - 🇸🇨 SC 25 - xiaohe
-  - 🇸🇨 SC 26 - xiaohe
-  - 🇸🇨 SC 27 - xiaohe
-  - 🇸🇨 SC 28 - xiaohe
-  - 🇸🇨 SC 29 - xiaohe
-  - 🇸🇨 SC 30 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -434,24 +159,5 @@ proxy-groups:
   - 🇸🇨 SC 09 - xiaohe
   - 🇸🇨 SC 10 - xiaohe
   - 🇸🇨 SC 11 - xiaohe
-  - 🇸🇨 SC 12 - xiaohe
-  - 🇸🇨 SC 13 - xiaohe
-  - 🇸🇨 SC 14 - xiaohe
-  - 🇸🇨 SC 15 - xiaohe
-  - 🇸🇨 SC 16 - xiaohe
-  - 🇸🇨 SC 17 - xiaohe
-  - 🇸🇨 SC 18 - xiaohe
-  - 🇸🇨 SC 19 - xiaohe
-  - 🇸🇨 SC 20 - xiaohe
-  - 🇸🇨 SC 21 - xiaohe
-  - 🇸🇨 SC 22 - xiaohe
-  - 🇸🇨 SC 23 - xiaohe
-  - 🇸🇨 SC 24 - xiaohe
-  - 🇸🇨 SC 25 - xiaohe
-  - 🇸🇨 SC 26 - xiaohe
-  - 🇸🇨 SC 27 - xiaohe
-  - 🇸🇨 SC 28 - xiaohe
-  - 🇸🇨 SC 29 - xiaohe
-  - 🇸🇨 SC 30 - xiaohe
 rules:
 - MATCH,PROXIES

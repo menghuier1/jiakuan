@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.170.135
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - xiaohe
   type: vless
   server: 94.183.170.135
@@ -28,74 +28,78 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 03 - xiaohe
   type: vless
-  server: 94.183.170.135
+  server: 45.80.108.236
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip
     headers:
-      Host: estproxy4.lockdwn.com
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
 - name: 🇪🇪 EE 04 - xiaohe
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 05 - xiaohe
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 06 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 07 - xiaohe
-  type: vless
-  server: 94.183.170.135
+  server: 45.80.108.236
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip
     headers:
-      Host: 94.183.170.135
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+- name: 🇪🇪 EE 06 - xiaohe
+  type: vless
+  server: 104.24.30.89
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇪🇪 EE 07 - xiaohe
+  type: vless
+  server: mybb.com
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
 - name: 🇪🇪 EE 08 - xiaohe
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 09 - xiaohe
   type: vless
   server: 94.183.170.135
@@ -132,32 +136,30 @@ proxies:
     headers:
       Host: 94.183.170.135
 - name: 🇪🇪 EE 12 - xiaohe
-  type: vless
-  server: 172.67.67.178
+  type: vmess
+  server: 5.101.122.59
   port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+      Host: renderer-stream-2-62.mirra.now
 - name: 🇪🇪 EE 13 - xiaohe
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 14 - xiaohe
   type: vless
   server: 94.183.170.135
@@ -170,21 +172,69 @@ proxies:
 - name: 🇪🇪 EE 15 - xiaohe
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 16 - xiaohe
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 17 - xiaohe
+  type: vless
+  server: 45.80.108.236
+  port: 443
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+- name: 🇪🇪 EE 18 - xiaohe
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 19 - xiaohe
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -206,6 +256,9 @@ proxy-groups:
   - 🇪🇪 EE 14 - xiaohe
   - 🇪🇪 EE 15 - xiaohe
   - 🇪🇪 EE 16 - xiaohe
+  - 🇪🇪 EE 17 - xiaohe
+  - 🇪🇪 EE 18 - xiaohe
+  - 🇪🇪 EE 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -227,5 +280,8 @@ proxy-groups:
   - 🇪🇪 EE 14 - xiaohe
   - 🇪🇪 EE 15 - xiaohe
   - 🇪🇪 EE 16 - xiaohe
+  - 🇪🇪 EE 17 - xiaohe
+  - 🇪🇪 EE 18 - xiaohe
+  - 🇪🇪 EE 19 - xiaohe
 rules:
 - MATCH,PROXIES

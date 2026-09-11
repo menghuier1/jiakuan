@@ -6,23 +6,34 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: 108.165.233.223
-  port: 443
-  uuid: 2388e166-3890-33ae-f77e-efac00000003
+  server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 02 - xiaohe
+  type: vmess
+  server: 62.171.228.179
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇧🇬 BG 02 - xiaohe
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇧🇬 BG 03 - xiaohe
   type: vless
-  server: 45.40.149.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: false
   skip-cert-verify: true
@@ -30,8 +41,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime39.workers.dev
-- name: 🇧🇬 BG 03 - xiaohe
+      Host: 192.145.31.5
+- name: 🇧🇬 BG 04 - xiaohe
   type: vless
   server: neth9.lunariai.ru
   port: 8443
@@ -40,7 +51,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 04 - xiaohe
+- name: 🇧🇬 BG 05 - xiaohe
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 06 - xiaohe
   type: vless
   server: neth9.lunariai.ru
   port: 443
@@ -53,31 +73,9 @@ proxies:
     path: /
     headers:
       Host: neth9.lunariai.ru
-- name: 🇧🇬 BG 05 - xiaohe
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 06 - xiaohe
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 07 - xiaohe
   type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -87,7 +85,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 192.145.31.5
+      Host: neth9.lunariai.ru
 - name: 🇧🇬 BG 08 - xiaohe
   type: vless
   server: neth9.lunariai.ru
@@ -99,7 +97,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 09 - xiaohe
   type: vless
-  server: neth9.lunariai.ru
+  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -117,7 +115,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 11 - xiaohe
   type: vless
-  server: neth9.lunariai.ru
+  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -127,12 +125,16 @@ proxies:
 - name: 🇧🇬 BG 12 - xiaohe
   type: vless
   server: 192.145.31.5
-  port: 8443
+  port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
 - name: 🇧🇬 BG 13 - xiaohe
   type: vless
   server: neth9.lunariai.ru
@@ -144,7 +146,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 14 - xiaohe
   type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -180,7 +182,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 18 - xiaohe
   type: vless
-  server: neth9.lunariai.ru
+  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -189,7 +191,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 19 - xiaohe
   type: vless
-  server: neth9.lunariai.ru
+  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -198,16 +200,20 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 20 - xiaohe
   type: vless
-  server: neth9.lunariai.ru
-  port: 8443
+  server: 192.145.31.5
+  port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
 - name: 🇧🇬 BG 21 - xiaohe
   type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -216,7 +222,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 22 - xiaohe
   type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -235,19 +241,15 @@ proxies:
 - name: 🇧🇬 BG 24 - xiaohe
   type: vless
   server: neth9.lunariai.ru
-  port: 443
+  port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 25 - xiaohe
   type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -265,69 +267,16 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 27 - xiaohe
   type: vless
-  server: 192.145.31.5
-  port: 443
+  server: neth9.lunariai.ru
+  port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 28 - xiaohe
   type: vless
   server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 29 - xiaohe
-  type: vless
-  server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 30 - xiaohe
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
-- name: 🇧🇬 BG 31 - xiaohe
-  type: vless
-  server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 32 - xiaohe
-  type: vless
-  server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 33 - xiaohe
-  type: vless
-  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -367,11 +316,6 @@ proxy-groups:
   - 🇧🇬 BG 26 - xiaohe
   - 🇧🇬 BG 27 - xiaohe
   - 🇧🇬 BG 28 - xiaohe
-  - 🇧🇬 BG 29 - xiaohe
-  - 🇧🇬 BG 30 - xiaohe
-  - 🇧🇬 BG 31 - xiaohe
-  - 🇧🇬 BG 32 - xiaohe
-  - 🇧🇬 BG 33 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -405,10 +349,5 @@ proxy-groups:
   - 🇧🇬 BG 26 - xiaohe
   - 🇧🇬 BG 27 - xiaohe
   - 🇧🇬 BG 28 - xiaohe
-  - 🇧🇬 BG 29 - xiaohe
-  - 🇧🇬 BG 30 - xiaohe
-  - 🇧🇬 BG 31 - xiaohe
-  - 🇧🇬 BG 32 - xiaohe
-  - 🇧🇬 BG 33 - xiaohe
 rules:
 - MATCH,PROXIES
