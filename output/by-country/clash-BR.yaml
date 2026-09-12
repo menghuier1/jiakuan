@@ -11,17 +11,131 @@ proxies:
   cipher: aes-256-gcm
   password: owVdNnQcdPgthSyX
   udp: true
+- name: 🇧🇷 BR 02 - xiaohe
+  type: vless
+  server: 88.216.67.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇧🇷 BR 03 - xiaohe
+  type: vless
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime37.workers.dev
+- name: 🇧🇷 BR 04 - xiaohe
+  type: vless
+  server: 160.153.168.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇧🇷 BR 05 - xiaohe
+  type: vless
+  server: 185.207.196.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: 🇧🇷 BR 06 - xiaohe
+  type: ss
+  server: 216.128.168.190
+  port: 8388
+  cipher: aes-256-gcm
+  password: owVdNnQcdPgthSyX
+  udp: true
+- name: 🇧🇷 BR 07 - xiaohe
+  type: vless
+  server: 104.238.68.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime47.workers.dev
+- name: 🇧🇷 BR 08 - xiaohe
+  type: vless
+  server: 166.62.109.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime18.workers.dev
+- name: 🇧🇷 BR 09 - xiaohe
+  type: vless
+  server: 108.165.152.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime61.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - xiaohe
+  - 🇧🇷 BR 02 - xiaohe
+  - 🇧🇷 BR 03 - xiaohe
+  - 🇧🇷 BR 04 - xiaohe
+  - 🇧🇷 BR 05 - xiaohe
+  - 🇧🇷 BR 06 - xiaohe
+  - 🇧🇷 BR 07 - xiaohe
+  - 🇧🇷 BR 08 - xiaohe
+  - 🇧🇷 BR 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - xiaohe
+  - 🇧🇷 BR 02 - xiaohe
+  - 🇧🇷 BR 03 - xiaohe
+  - 🇧🇷 BR 04 - xiaohe
+  - 🇧🇷 BR 05 - xiaohe
+  - 🇧🇷 BR 06 - xiaohe
+  - 🇧🇷 BR 07 - xiaohe
+  - 🇧🇷 BR 08 - xiaohe
+  - 🇧🇷 BR 09 - xiaohe
 rules:
 - MATCH,PROXIES

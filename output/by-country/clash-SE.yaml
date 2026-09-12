@@ -1,0 +1,102 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇪 SE 01 - xiaohe
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 02 - xiaohe
+  type: vless
+  server: secdn-51.ktuda-skp.net
+  port: 443
+  uuid: 3def775e-8ccd-46f5-87d6-ce299d89d6c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: secdn-51.ktuda-skp.net
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 89.22.224.146
+  port: 43788
+  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇸🇪 SE 04 - xiaohe
+  type: vless
+  server: 213.21.229.126
+  port: 12345
+  uuid: 430aa2a0-3871-4c49-958f-a82655d70ad0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vless
+  server: 213.21.229.126
+  port: 12345
+  uuid: 76395434-8406-4ca4-8a8c-36da7e8ddd23
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇸🇪 SE 06 - xiaohe
+  type: vless
+  server: 213.21.229.126
+  port: 12345
+  uuid: 58809ac1-22fe-4372-8d84-ccaca97043fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
+  - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
+  - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
+rules:
+- MATCH,PROXIES
