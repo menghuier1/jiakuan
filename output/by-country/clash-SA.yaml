@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 81.208.170.142
   port: 1500
-  uuid: e332f028-d343-5b44-8016-b3130f39e133
+  uuid: sGLzG6kUwBpZd73sW0nq
   udp: true
   tls: true
   skip-cert-verify: true
@@ -20,7 +20,7 @@ proxies:
   type: vless
   server: 81.208.170.142
   port: 1500
-  uuid: e332f028-d343-5b44-8016-b3130f39e133
+  uuid: sGLzG6kUwBpZd73sW0nq
   udp: true
   tls: true
   skip-cert-verify: true
@@ -32,7 +32,7 @@ proxies:
   type: vless
   server: 81.208.170.142
   port: 1500
-  uuid: sGLzG6kUwBpZd73sW0nq
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   udp: true
   tls: true
   skip-cert-verify: true
@@ -41,18 +41,6 @@ proxies:
   servername: www.ebay.com
   client-fingerprint: chrome
 - name: 🇸🇦 SA 04 - xiaohe
-  type: vless
-  server: 81.208.170.142
-  port: 1500
-  uuid: sGLzG6kUwBpZd73sW0nq
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
-  servername: www.ebay.com
-  client-fingerprint: chrome
-- name: 🇸🇦 SA 05 - xiaohe
   type: vless
   server: 81.208.170.142
   port: 1500
@@ -73,7 +61,6 @@ proxy-groups:
   - 🇸🇦 SA 02 - xiaohe
   - 🇸🇦 SA 03 - xiaohe
   - 🇸🇦 SA 04 - xiaohe
-  - 🇸🇦 SA 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,6 +70,5 @@ proxy-groups:
   - 🇸🇦 SA 02 - xiaohe
   - 🇸🇦 SA 03 - xiaohe
   - 🇸🇦 SA 04 - xiaohe
-  - 🇸🇦 SA 05 - xiaohe
 rules:
 - MATCH,PROXIES

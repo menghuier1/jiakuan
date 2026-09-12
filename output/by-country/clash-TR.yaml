@@ -6,20 +6,22 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: app.life-pro.ir
-  port: 8082
-  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
+  server: 195-162-69-203.sslip.io
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
-  server: 185.71.219.173
-  port: 50152
-  uuid: My-chanel-Telegram-ATOVPN
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
   server: 195-162-69-203.sslip.io
@@ -31,7 +33,7 @@ proxies:
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
-  server: 195-162-69-203.sslip.io
+  server: 195.162.69.203
   port: 8443
   uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
@@ -40,26 +42,32 @@ proxies:
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: vless
-  server: app.life-pro.ir
-  port: 8082
-  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  type: vless
-  server: 195.162.69.203
+  server: 195-162-69-203.sslip.io
   port: 8443
   uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
   tls: true
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  type: vless
+  server: 188.114.99.250
+  port: 443
+  uuid: 30cc2bdb-4d43-4a4e-8cae-bb44e615fc90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kurdnet.arianetmili.xyz
+  network: ws
+  ws-opts:
+    path: /full
+    headers:
+      Host: kurdnet.arianetmili.xyz
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   type: vless
-  server: app.life-pro.ir
-  port: 8082
-  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
+  server: 185.71.219.237
+  port: 47660
+  uuid: Telegram_ATOVPN
   udp: true
   tls: false
   skip-cert-verify: true
@@ -73,6 +81,44 @@ proxies:
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  type: vless
+  server: app.life-pro.ir
+  port: 8082
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  type: vless
+  server: 195-162-69-203.sslip.io
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  type: vless
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  type: vless
+  server: 158.94.216.50
+  port: 32306
+  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: edge
+- name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
   type: vless
   server: 195-162-69-203.sslip.io
   port: 8443
@@ -95,6 +141,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,5 +159,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 13 - xiaohe
 rules:
 - MATCH,PROXIES
