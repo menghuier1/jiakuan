@@ -6,59 +6,28 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaohe
   type: vless
-  server: 213.111.149.58
-  port: 8443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  server: ukraine-sgood.wopd.butnorwa.butter.silicore.ir
+  port: 9000
+  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: eded-52n.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: eded-52n.pages.dev
+  reality-opts:
+    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
+  servername: sheets.google.com
+  client-fingerprint: chrome
 - name: 🇺🇦 UA 02 - xiaohe
   type: vless
-  server: 185.170.166.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime04.workers.dev
-- name: 🇺🇦 UA 03 - xiaohe
-  type: vless
-  server: 213.111.149.58
-  port: 8443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  server: ukraine-sgood.wopd.butnorwa.butter.silicore.ir
+  port: 9000
+  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: eded-52n.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: eded-52n.pages.dev
-- name: 🇺🇦 UA 04 - xiaohe
-  type: vless
-  server: 213.111.149.58
-  port: 8443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: eded-52n.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: eded-52n.pages.dev
+  reality-opts:
+    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
+  servername: sheets.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
-  - 🇺🇦 UA 03 - xiaohe
-  - 🇺🇦 UA 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
-  - 🇺🇦 UA 03 - xiaohe
-  - 🇺🇦 UA 04 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 (家宽) - xiaohe
   type: vless
-  server: 88.216.67.50
+  server: 173.245.49.50
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /?ed=2560
     headers:
-      Host: vms.lifetime05.workers.dev
+      Host: vms.lifetime36.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

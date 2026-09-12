@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - xiaohe
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: chrome
 - name: 🇦🇹 AT 02 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -27,7 +22,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇦🇹 AT 03 - xiaohe
   type: ss
   server: 82.110.60.9
@@ -36,12 +31,17 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇦🇹 AT 04 - xiaohe
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: chrome
 - name: 🇦🇹 AT 05 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -53,7 +53,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇦🇹 AT 06 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -65,14 +65,19 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇦🇹 AT 07 - xiaohe
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: qq
 - name: 🇦🇹 AT 08 - xiaohe
   type: vless
   server: 152.53.1.40
@@ -85,34 +90,6 @@ proxies:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
   client-fingerprint: qq
-- name: 🇦🇹 AT 09 - xiaohe
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: chrome
-- name: 🇦🇹 AT 10 - xiaohe
-  type: vmess
-  server: image.colorviolet.ir
-  port: 4932
-  uuid: 6b8dbc66-ea40-444a-b93d-cb20c008af10
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,8 +103,6 @@ proxy-groups:
   - 🇦🇹 AT 06 - xiaohe
   - 🇦🇹 AT 07 - xiaohe
   - 🇦🇹 AT 08 - xiaohe
-  - 🇦🇹 AT 09 - xiaohe
-  - 🇦🇹 AT 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,7 +116,5 @@ proxy-groups:
   - 🇦🇹 AT 06 - xiaohe
   - 🇦🇹 AT 07 - xiaohe
   - 🇦🇹 AT 08 - xiaohe
-  - 🇦🇹 AT 09 - xiaohe
-  - 🇦🇹 AT 10 - xiaohe
 rules:
 - MATCH,PROXIES
